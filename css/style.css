@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid green;*/
+  font-family: "Droid Sans", "HelviticaNeue", sans-serif;
+}
+
+body {
+  /*background: lightgray;*/
+  color: white;
+}
+
+
+
+/*/// NAVIGATION MENU ///*/
+
+
+
+nav {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.nav {
+  width: 960px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 2px;
+}
+
+.menuItemLeft {
+  display: inline-block;
+  line-height: 40px;
+  width: 100px;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 1px;
+}
+
+.menuItemRight {
+  display: inline-block;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+
+
+/*/// HOME PAGE ///*/
+
+
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/9f/58/ec/9f58ec42c1689de711ac16af3531ec46.jpg);
+  background-size: cover;
+  /*background: gray; /* backgroud Img to replace */*/
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/*.navSpacer {
+  height: 20px;
+}*/
+
+.arrowDown {
+  /*display: none;*/
+  position: relative;
+  height: 40px;
+  font-size: 40px;
+  transform: scaleY(0.3);
+  top: 280px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.arrowDown a {
+  text-decoration: none;
+  color: white;
+}
+
+.arrowDown a:hover {
+  /*color: rgba(0, 0, 0, 0);*/
+  text-shadow: 0 0 20px white;
+}
+
+
+/*/// About Me ///*/
+
+.container {
+  width: 960px;
+  display: inline-block;
+}
+
+.aboutMe {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  /*background: black;*/
+  /*background: gray; /* backgroud Img to replace */*/
+}
+
+
+
+
+/*/// Projects ///*/
+
+.projects {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  /*display: flex;*/
+  /*flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  background: lightgray;
+  /*background: gray; /* backgroud Img to replace */*/
+}
+
+
+svg{
+  background:url('../images/twettir.png');
+  background-size: cover;
+  /*background: black;*/
+  background-position: top;
+  width:40vmin; height:auto;
+  display:inline-block;;
+  margin:30vmin 10px;
+}
+text{
+  font-size:10px;
+  transition:font-size .4s ease-out;
+  font-weight:900;
+  font-family:arial;
+}
+svg:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 500px;
+}
