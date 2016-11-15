@@ -32,6 +32,7 @@ nav {
   font-size: 13pt;
   font-weight: 300;
 }
+
 .navLeft {
   display: flex;
   flex-direction: row;
@@ -60,7 +61,12 @@ nav {
   color: white;
   margin-left: 10px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease;
+}
 
+.menuItemRight:hover {
+  color: gray;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0);
 }
 
 
@@ -115,12 +121,14 @@ h3 {
   /*display: none;*/
   position: relative;
   height: 40px;
-  font-size: 40px;
-  transform: scaleY(0.3);
   top: 270px;
   font-weight: 200;
   cursor: pointer;
   transition: all .4s ease;
+}
+
+.arrowDown i:before {
+  font-size: 30px;
 }
 
 .arrowDown a, .typed-cursor {
@@ -189,12 +197,13 @@ h3 {
 /*/// SKILLS ///*/
 
 .skills {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100vw;
   text-align: center;
   display: flex;
   justify-content: center;
-  color: black;
+  color: white;
+  background: lightblue;
 }
 
 .skills h1 {
@@ -220,13 +229,17 @@ i:before {
 }
 
 i:hover {
-  color: lightblue;
+  color: gray;
 }
 
 .skills span {
   display: inline-block;
   width: 100%;
   margin-top: 10px;
+}
+
+.skillsSpacer {
+  height:40px;
 }
 
 
@@ -237,7 +250,7 @@ i:hover {
 
 
 .projects {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100vw;
   text-align: center;
   background: #fff;
@@ -250,9 +263,9 @@ i:hover {
 }
 
 .projectsDiv {
-  width: 30%;
+  width: 50%;
   display: inline-block;
-  height: 250px;
+  height: 400px;
   margin: 1%;
   vertical-align: top;
   /*border: 1px solid black;*/
@@ -290,6 +303,28 @@ i:hover {
 
 
 
+/*/// FOOTER ///*/
+
+footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);;
+}
+
+.footer {
+  width: 1250px;
+  height: 150px;
+  display: inline-flex;
+  justify-content: space-around;
+  font-size: 13pt;
+  font-weight: 300;
+}
+
+
+
 
 
 
@@ -300,7 +335,7 @@ i:hover {
 /*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*/
 
 
-.svg1 {
+/*.svg1 {
   background:url('../images/thisapp.png');
     background-size: cover;
   background-position: top;
@@ -332,4 +367,4 @@ text{
 .svg2:hover text{
   transition:font-size .6s ease-in;
   font-size: 500pt;
-}
+}*/
