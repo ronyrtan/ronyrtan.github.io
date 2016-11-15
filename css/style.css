@@ -12,7 +12,7 @@ body {
 
 
 
-/*/// NAVIGATION MENU ///*/
+/*/// NAVIGATION MENU ///*//*/// NAVIGATION MENU ///*//*/// NAVIGATION MENU ///*/
 
 
 
@@ -25,10 +25,11 @@ nav {
 }
 
 .nav {
-  width: 960px;
+  width: 1250px;
   height: 40px;
   display: inline-flex;
   justify-content: space-between;
+  font-size: 12pt;
 }
 .navLeft {
   display: flex;
@@ -63,7 +64,7 @@ nav {
 
 
 
-/*/// HOME PAGE ///*/
+/*/// HOME PAGE ///*//*/// HOME PAGE ///*//*/// HOME PAGE ///*//*/// HOME PAGE ///*/
 
 
 
@@ -83,7 +84,8 @@ nav {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30pt;
+  font-weight: 400;
 }
 
 h3 {
@@ -134,11 +136,12 @@ h3 {
 }*/
 
 .element, .typed-cursor{
-  font-size: 40px;
+  font-size: 40pt;
 }
 
 
-/*/// About Me ///*/
+
+/*/// About Me ///*//*/// About Me ///*//*/// About Me ///*//*/// About Me ///*/
 
 
 
@@ -147,22 +150,43 @@ h3 {
   display: inline-block;
 }
 
-.aboutMe {
-  height: 100vh;
+.about {
+  height: 150vh;
   width: 100vw;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   color: black;
   /*background: black;*/
   /*background: gray; /* backgroud Img to replace */*/
 }
 
+.about h1 {
+  padding: 50px;
+}
+
+.about p {
+  /*width: 500px;*/
+  text-align: center;
+  padding: 0 100px 50px 100px;
+}
+
+.skills {
+  display: inline-block;
+  border: 1px solid black;
+  height: 40vh;
+  width: 30%;
+  margin: 1%;
+}
 
 
-/*/// Projects ///*/
+
+/*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
+
+
+
 
 .projects {
   height: 100vh;
@@ -174,9 +198,50 @@ h3 {
 }
 
 .projects h1 {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
+.projectsDiv {
+  width: 30%;
+  display: inline-block;
+  height: 40vh;
+  margin: 1%;
+  vertical-align: top;
+  /*border: 1px solid black;*/
+}
+
+.projectImgCont {
+  width: 100%;
+  height: 60%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease;
+}
+
+.projectImg:hover {
+  transform: scale(1.2);
+}
+
+.twettirImg {
+  background: url('../images/twettir.png');
+  background-size: cover;
+  background-position: top;
+}
+
+.thisAppImg {
+  background: url('../images/thisapp.png');
+  background-size: cover;
+  background-position: top;
+}
+
+
+/*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*/
 
 
 .svg1 {
@@ -198,17 +263,17 @@ h3 {
 }
 
 text{
-  font-size:10px;
+  font-size:7pt;
   transition:font-size .6s ease-out;
   font-weight:900;
   font-family:arial;
 }
 .svg1:hover text{
   transition:font-size .6s ease-in;
-  font-size: 500px;
+  font-size: 500pt;
 }
 
 .svg2:hover text{
   transition:font-size .6s ease-in;
-  font-size: 500px;
+  font-size: 500pt;
 }
