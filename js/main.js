@@ -1,9 +1,35 @@
 $(document).ready(function(){
-  var $arrow = $('.test');
-  $(window).on('mouseover', function(){
-    $('.arrowDown a').fadeToggle(2000);
+
+  $(document).scroll(function(){
+    if ($(document).scrollTop() > 600) {
+      $('nav').css('background', 'black');
+    } else {
+      $('nav').css('background', 'none');
+    }
+    console.log($(document).scrollTop());
+
   });
 });
+
+$(function(){
+  $(".element").typed({
+    strings: ["Hi there!", "^1000 Welcome to my page.", "I'm a ^200 Web Designer.^1000", "A ^200 Web Developer.^1000", "I am ^300 .^300 .^300 .^300", "<strong>RON TAN</strong>"],
+    typeSpeed: 50,
+    startDelay: 5,
+    backSpeed: 0,
+    // backspace: function(curString, curStrPos){
+    //   setTimeout(function() {
+    //     if (self.arrayPos == 2){
+    //         self.stopNum = 3;
+    //     }
+    //     else{
+    //         self.stopNum = 0;
+    //     }
+    //   });
+    // }
+  });
+});
+
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

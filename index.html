@@ -5,6 +5,7 @@
   <title>ronyrtan</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/jquery.js"></script>
+  <script src="js/typed.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
   <nav>
     <div class="nav">
       <div class="navLeft">
-        <div class="menuItemLeft">RON TAN</div>
+        <a href="#home" class="menuItemLeft">RON TAN</a>
       </div>
       <div class="navRight">
         <a href="#aboutMe" class="menuItemRight">About Me</a>
@@ -23,8 +24,11 @@
   </nav>
 
   <div id="home" class="home">
-    <h1>RON TAN</h1>
-    <h3><em>WEB DEVELOPER</em></h3>
+    <!-- <h1>RON TAN</h1> -->
+    <div class="headerDesc">
+      <span class="element"></span>
+    </div>
+
     <div class="navSpacer"></div>
     <div class="arrowDown">
       <a href="#aboutMe">V</a>
@@ -41,7 +45,7 @@
   <div id="projects" class="projects">
 
     <h2>Projects</h2>
-    <svg viewbox="0 0 50 50" width="50" height="50">
+    <svg viewbox="0 0 50 50" width="50" height="50" class="svg1">
       <defs>
         <mask id="mask" x="0" y="0" width="100" height="49">
           <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
@@ -54,19 +58,23 @@
           <text x="38" text-anchor="middle" y="50" dy="0">P</text>
         </mask>
       </defs>
-      <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2"/>
+      <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="lightblue"/>
     </svg>
 
-    <svg viewbox="0 0 50 50" width="50" height="50">
+    <svg viewbox="0 0 50 50" width="50" height="50" class="svg2">
       <defs>
         <mask id="mask" x="0" y="0" width="100" height="49">
           <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
-          <text x="20" text-anchor="middle" y="50" dy="0">R</text>
-          <text x="25" id="ltrV" text-anchor="middle" y="50" dy="0">O</text>
-          <text x="30" text-anchor="middle" y="50" dy="0">N</text>
+          <text x="8" text-anchor="middle" y="50" dy="0">T</text>
+          <text x="15" id="ltrV" text-anchor="middle" y="50" dy="0">W</text>
+          <text x="22" text-anchor="middle" y="50" dy="0">E</text>
+          <text x="27" text-anchor="middle" y="50" dy="0">T</text>
+          <text x="32" text-anchor="middle" y="50" dy="0">T</text>
+          <text x="36" text-anchor="middle" y="50" dy="0">I</text>
+          <text x="40" text-anchor="middle" y="50" dy="0">R</text>
         </mask>
       </defs>
-      <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2"/>
+      <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="lightblue"/>
     </svg>
   </div>
 
