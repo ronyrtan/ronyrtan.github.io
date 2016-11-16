@@ -29,7 +29,7 @@ nav {
   height: 40px;
   display: inline-flex;
   justify-content: space-between;
-  font-size: 13pt;
+  font-size: 12pt;
   font-weight: 300;
 }
 
@@ -253,9 +253,10 @@ i:hover {
   /*height: 100vh;*/
   width: 100vw;
   text-align: center;
-  background: #fff;
+  display: flex;
+  justify-content: center;
   color: black;
-  /*background: gray; /* backgroud Img to replace */*/
+  background: white;
 }
 
 .projects h1 {
@@ -277,6 +278,16 @@ i:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
   overflow: hidden;
+}
+
+.twettirLinks {
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  transition: all .3s ease;
+}
+
+.twettirLinks:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .projectImg {
@@ -318,9 +329,13 @@ footer {
   width: 1250px;
   height: 150px;
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 13pt;
   font-weight: 300;
+}
+
+.footer i {
+  margin: 20px 10px;
 }
 
 
