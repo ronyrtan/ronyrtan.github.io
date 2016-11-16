@@ -27,6 +27,7 @@ nav {
 .nav {
   width: 1250px;
   height: 40px;
+  padding: 0 1%;
   display: inline-flex;
   justify-content: space-between;
   font-size: 12pt;
@@ -109,6 +110,12 @@ h3 {
   height: 40px;
 }
 
+.spacer a {
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+
 .spacerContent {
   display: none;
 }
@@ -116,7 +123,8 @@ h3 {
 .arrowCont {
   position: absolute;
   display: flex;
-  height: 95%;
+  top: 63%;
+  height: 35%;
   vertical-align: bottom;
   align-items: flex-end;
 }
@@ -165,7 +173,8 @@ h3 {
 
 
 
-.container {
+.about .container {
+  padding: 0 5%;
   width: 960px;
   display: inline-block;
 }
@@ -234,6 +243,12 @@ h3 {
   background: lightblue;
 }
 
+.skills .container {
+  padding: 0 5%;
+  width: 960px;
+  display: inline-block;
+}
+
 .skills h1 {
   padding: 50px;
 }
@@ -287,6 +302,12 @@ i:hover {
   background: white;
 }
 
+.projects .container {
+  padding: 0 5%;
+  width: 960px;
+  display: inline-block;
+}
+
 .projects h1 {
   padding: 50px 0;
 }
@@ -317,6 +338,7 @@ i:hover {
 
 .projectImg:hover {
   transform: scale(1.1);
+  z-index: 0;
 }
 
 .twettirImg {
@@ -350,6 +372,7 @@ i:hover {
 
 .contact .container {
   width: 960px;
+  display: inline-block;
 }
 
 .contact h1 {
