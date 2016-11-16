@@ -11,7 +11,10 @@ $(document).ready(function(){
       $('.about h1').animate({left: '0px'},1000);
       $('.about h1').addClass('fadeIn');
     }
-
+    if ($(document).scrollTop() > 300) {
+      $('.about p').animate({left: '0px'},1000);
+      $('.about p').addClass('fadeIn');
+    }
   });
 });
 
