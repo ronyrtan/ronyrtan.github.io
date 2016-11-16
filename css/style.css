@@ -292,11 +292,12 @@ i:hover {
 }
 
 .projectsDiv {
-  width: 50%;
-  display: inline-block;
+  max-width: 500px;
+  display: block;
   height: 400px;
-  margin: 1%;
+  /*margin: 1%;*/
   vertical-align: top;
+  margin: 0 auto;
   /*border: 1px solid black;*/
 }
 
