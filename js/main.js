@@ -6,7 +6,11 @@ $(document).ready(function(){
     } else {
       $('nav').css('background', 'rgba(0,0,0,0)');
     }
-    console.log($(document).scrollTop());
+
+    if ($(document).scrollTop() > 100) {
+      $('.about h1').animate({left: '0px'},1000);
+      $('.about h1').addClass('fadeIn');
+    }
 
   });
 });
