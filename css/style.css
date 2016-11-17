@@ -22,6 +22,7 @@ nav {
   justify-content: center;
   height: 40px;
   width: 100%;
+  z-index: 500;
 }
 
 .nav {
@@ -185,11 +186,6 @@ i:hover {
 
 
 
-.about .container {
-  padding: 0 5%;
-  width: 960px;
-  display: inline-block;
-}
 
 .about {
   /*height: 140vh;*/
@@ -198,7 +194,13 @@ i:hover {
   display: flex;
   justify-content: center;
   color: black;
-  background: rgba(250, 250, 250, 1);
+  background: white;
+}
+
+.about .container {
+  padding: 0 5%;
+  width: 960px;
+  display: inline-block;
 }
 
 .about h1 {
@@ -226,10 +228,6 @@ i:hover {
 @keyframes animat_show{
   0%{opacity:0}
   100%{opacity:1}
-}
-
-.about .h1spacer {
-  height: 126px;
 }
 
 .about p {
