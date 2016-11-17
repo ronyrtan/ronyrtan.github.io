@@ -443,11 +443,11 @@ i:hover {
   line-height: 2;
 }
 
-/*@media(min-width: 805px) {
+@media(min-width: 805px) {
   .contactMsg {
     border-right: 1px solid lightgray;
   }
-}*/
+}
 
 .contactMsg p {
   color: lightgray;
