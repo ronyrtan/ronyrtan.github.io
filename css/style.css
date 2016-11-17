@@ -440,11 +440,11 @@ i:hover {
   max-width: 300px;
   display: inline-block;
   /*border-right: 1px solid lightgray;*/
-  padding: 0 20px;
+  padding: 0 15px 0 0;
   line-height: 2;
 }
 
-@media(min-width: 800px) {
+@media(min-width: 640px) {
   .contactMsg {
     border-right: 1px solid lightgray;
   }
@@ -475,7 +475,7 @@ i:hover {
   /*border: 1px solid white;*/
   display: inline-block;
   vertical-align: middle;
-  margin-left: 90px;
+  margin-left: 65px;
 }
 
 .contact i:before {
