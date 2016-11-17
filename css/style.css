@@ -167,6 +167,18 @@ h3 {
   font-size: 40pt;
 }
 
+.home a {
+  margin: 20px 10px;
+}
+
+i:before {
+  font-size: 40px;
+}
+
+i:hover {
+  color: lightblue;
+}
+
 
 
 /*/// About Me ///*//*/// About Me ///*//*/// About Me ///*//*/// About Me ///*/
@@ -267,11 +279,11 @@ h3 {
   margin: 1%;
 }
 
-i:before {
+.skills i:before {
   font-size: 40px;
 }
 
-i:hover {
+.skills i:hover {
   color: gray;
 }
 
@@ -341,6 +353,20 @@ i:hover {
   z-index: 0;
 }
 
+.projects a  {
+  text-decoration: none;
+  color: gray;
+  font-size: 40px;
+}
+
+.projects a:hover {
+  color: lightblue;
+}
+
+.projects p {
+  margin-bottom: 5px;
+}
+
 .twettirImg {
   background: url('../images/twettir.png');
   background-size: cover;
@@ -349,6 +375,18 @@ i:hover {
 
 .thisAppImg {
   background: url('../images/thisapp.png');
+  background-size: cover;
+  background-position: top;
+}
+
+.tictactoeImg {
+  background: url('../images/tictactoe.png');
+  background-size: cover;
+  background-position: top;
+}
+
+.moviegramImg {
+  background: url('../images/moviegram.png');
   background-size: cover;
   background-position: top;
 }
@@ -377,6 +415,11 @@ i:hover {
 
 .contact h1 {
   font-weight: 300;
+  padding: 30px 0;
+}
+
+.contact p {
+
 }
 
 
@@ -400,9 +443,12 @@ footer {
   font-weight: 300;
 }
 
-.footer i {
+.footer a {
   margin: 20px 10px;
+  font-size: 40px;
+  color: white;
 }
+
 
 
 
