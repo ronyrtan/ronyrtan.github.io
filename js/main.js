@@ -16,7 +16,13 @@ $(document).ready(function(){
       $('.about p').addClass('fadeIn');
     }
   });
+  // if($(innerWidth) > 805 + "px" ){
+  //   $('.contactMsg').css({'border-right': '1px solid lightgray'});
+  // } else {
+  //   $('.contactMsg').css({'border-right': '1px solid pink'});
+  // }
 });
+
 
 $(function(){
   $(".element").typed({

@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /*border: 1px solid green;*/
   font-family: "Droid Sans", "HelviticaNeue", sans-serif;
 }
 
@@ -141,7 +140,7 @@ h3 {
   font-size: 30px;
 }
 
-.arrowDown a, .typed-cursor {
+.arrowDown a, .arrowUp a, .typed-cursor {
   text-decoration: none;
   color: white;
   opacity: 1;
@@ -308,7 +307,7 @@ i:hover {
   text-align: center;
   display: flex;
   justify-content: center;
-  color: black;
+  color: gray;
   background: white;
 }
 
@@ -330,12 +329,13 @@ i:hover {
   vertical-align: top;
   margin: 0 auto;
   /*border: 1px solid black;*/
+  margin-bottom: 20px;
 }
 
 .projectImgCont {
   width: 100%;
   height: 60%;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -398,7 +398,7 @@ i:hover {
 
 
 .contact {
-  height: 50vh;
+  /*height: 50vh;*/
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -409,85 +409,136 @@ i:hover {
 .contact .container {
   width: 960px;
   display: inline-block;
+  /*border: 1px solid black;*/
 }
 
 .contact h1 {
   font-weight: 300;
   padding: 30px 0;
+  /*color: gray;*/
+}
+
+.contact h2 {
+  font-weight: 300;
+  font-size: 30px;
 }
 
 .contact p {
+  margin-bottom: 15px;
+  /*text-align: left;*/
+  color: lightgray;
+}
 
+.contentCont {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.contactMsg {
+  width: 300px;
+  display: inline-block;
+  /*border-right: 1px solid lightgray;*/
+  padding: 0 50px;
+  line-height: 2;
+}
+
+@media(min-width: 805px) {
+  .contactMsg {
+    border-right: 1px solid lightgray;
+  }
+}
+
+.contactMsg p {
+  color: lightgray;
+}
+
+.contactList {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  /*border: 1px solid black;*/
+  text-align: left;
+}
+
+.contentInfo {
+  /*border: 1px solid black;*/
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.4;
+  margin-left: 20px;
+}
+
+.contentIcon {
+  /*border: 1px solid white;*/
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 90px;
+}
+
+.contact i:before {
+  font-size: 20px;
 }
 
 
+
 /*/// FOOTER ///*//*/// FOOTER ///*//*/// FOOTER ///*//*/// FOOTER ///*//*/// FOOTER ///*/
+
+
 
 footer {
   display: flex;
   position: relative;
   justify-content: center;
-  height: 150px;
+  height: 120px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .footer {
   width: 1250px;
-  height: 150px;
-  display: inline-flex;
-  justify-content: center;
+  height: 120px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
   font-size: 13pt;
   font-weight: 300;
+  text-align: center;
 }
 
 .footer a {
-  margin: 20px 10px;
+  margin: 0 10px;
   font-size: 40px;
   color: white;
 }
 
-
-
-
-
-
-
-
-
-/*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*//*/// SVG ///*/
-
-
-/*.svg1 {
-  background:url('../images/thisapp.png');
-    background-size: cover;
-  background-position: top;
-  width:40vmin; height:auto;
-  display:inline-block;;
-  margin: 20px 12vmin;
+.footer .links {
+  position: relative;
+  margin: 20px 10px;
 }
 
-.svg2 {
-  background:url('../images/twettir.png');
-    background-size: cover;
-  background-position: top;
-  width:40vmin; height:auto;
-  display:inline-block;
-  margin: 20px 12vmin;
+.footer .copyright p {
+  font-size: 14px;
+  color: gray;
 }
 
-text{
-  font-size:7pt;
-  transition:font-size .6s ease-out;
-  font-weight:900;
-  font-family:arial;
-}
-.svg1:hover text{
-  transition:font-size .6s ease-in;
-  font-size: 500pt;
+.arrowUp {
+  position: relative;
+  /*border: 1px solid white;*/
+  /*width: 50px;*/
+  height: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  top: -30px;
 }
 
-.svg2:hover text{
-  transition:font-size .6s ease-in;
-  font-size: 500pt;
-}*/
+.fa-chevron-up a {
+  font-size: 20px;
+  position: absolute;
+}
+
+.fa-chevron-up:before {
+  font-size: 30px;
+}
