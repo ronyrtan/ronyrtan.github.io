@@ -297,64 +297,159 @@ i:hover {
 
 
 /*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
+/*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
+/*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
 
 
 
 
-.projects {
-  /*height: 100vh;*/
-  width: 100vw;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  color: gray;
-  background: white;
+
+html, body,
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section {
+	height: 100%;
 }
 
-.projects .container {
-  padding: 0 5%;
-  width: 960px;
-  display: inline-block;
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#fbsection1 {
+	background-image: url(../images/twettir.png);
+  background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: static;
+  transition: 1s ease-in-out;
+  background-color: white;
+}
+
+#fbsection2 {
+	background-image: url(../images/thisapp.png);
+    background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: static;
+  transition: 1s ease-in-out;
+  background-color: lightblue;
+  /*background: lightblue;*/
+}
+
+#fbsection3 {
+	background-image: url(../images/tictactoe.png);
+    background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: static;
+  transition: 1s ease-in-out;
+  background-color: #1F1E20;
+  /*background: lightgray;*/
+}
+
+#fbsection4 {
+	background-image: url(../images/moviegram.png);
+  background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: static;
+  transition: 1s ease-in-out;
+  background-color: lightblue;
+  /*background: lightgray;*/
+}
+
+#fbsection5 {
+	background-image: url(../images/thisapp.png);
+    background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: static;
+  transition: 1s ease-in-out;
+  background-color: white;
+  /*background: lightgray;*/
+}
+
+
+
+
+/*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
+/*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
+/*/// Projects ///*//*/// Projects ///*//*/// Projects ///*//*/// Projects ///*/
+
+.projecthead {
+  height: 100px;
 }
 
 .projects h1 {
   padding: 50px 0;
+  text-align: center;
+  color: gray;
 }
 
+
+.projects {
+  height: 100vh;
+  width: 100vw;
+  /*text-align: center;*/
+  color: gray;
+  background: white;
+  /*position: absolute;
+  overflow: scroll;*/
+}
+
+.projects.container {
+  padding: 0 5%;
+  width: 100%;
+  /*width: 960px;*/
+  /*border: 1px solid black;*/
+  display: inline-block;
+}
+
+
+
 .projectsDiv {
-  max-width: 500px;
-  display: block;
+  max-width: 960px;
+  display: flex;
   height: 400px;
   /*margin: 1%;*/
   vertical-align: top;
   margin: 0 auto;
   /*border: 1px solid black;*/
   margin-bottom: 20px;
+  /*overflow: scroll;*/
 }
 
-.projectImgCont {
-  width: 100%;
-  height: 60%;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-  overflow: hidden;
+.projectLinks {
+  margin-top: 20vh;
+  width: 35%;
+  line-height: 2;
 }
 
-.projectImg {
-  width: 100%;
-  height: 100%;
-  transition: all 1s ease;
+#fbsection1 .projectLinks {
+  transform: translateY(-120px);
 }
 
-.projectImg:hover {
-  transform: scale(1.1);
-  z-index: 0;
+.projects i {
+  vertical-align: top;
 }
 
 .projects a  {
   text-decoration: none;
   color: gray;
   font-size: 40px;
+  line-height: 1;
+
 }
 
 .projects a:hover {
@@ -389,6 +484,11 @@ i:hover {
   background-position: top;
 }
 
+
+.projectSpacer {
+    height: 425vh;
+  width: 100vw;
+}
 
 
 
