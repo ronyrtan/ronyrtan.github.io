@@ -330,7 +330,6 @@ html, body,
   position: static;
   transition: 1s ease-in-out;
   background-color: white;
-  overflow: scroll;
 }
 
 #fbsection2 {
@@ -342,7 +341,6 @@ html, body,
   position: static;
   transition: 1s ease-in-out;
   background-color: lightblue;
-  overflow: scroll;
 }
 
 #fbsection3 {
@@ -354,7 +352,6 @@ html, body,
   position: static;
   transition: 1s ease-in-out;
   background-color: #1F1E20;
-  overflow: scroll;
 }
 
 #fbsection4 {
@@ -366,7 +363,6 @@ html, body,
   position: static;
   transition: 1s ease-in-out;
   background-color: lightblue;
-  overflow: scroll;
 }
 
 #fbsection5 {
@@ -378,7 +374,6 @@ html, body,
   position: static;
   transition: 1s ease-in-out;
   background-color: white;
-  overflow: scroll;
 }
 
 
