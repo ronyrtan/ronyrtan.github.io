@@ -463,31 +463,6 @@ html, body,
   margin-bottom: 5px;
 }
 
-.twettirImg {
-  background: url('../images/twettir.png');
-  background-size: cover;
-  background-position: top;
-}
-
-.thisAppImg {
-  background: url('../images/thisapp.png');
-  background-size: cover;
-  background-position: top;
-}
-
-.tictactoeImg {
-  background: url('../images/tictactoe.png');
-  background-size: cover;
-  background-position: top;
-}
-
-.moviegramImg {
-  background: url('../images/moviegram.png');
-  background-size: cover;
-  background-position: top;
-}
-
-
 .projectSpacer {
     height: 425vh;
   width: 100vw;
@@ -530,6 +505,11 @@ html, body,
   margin-bottom: 15px;
   /*text-align: left;*/
   color: lightgray;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
 }
 
 .contentCont {
