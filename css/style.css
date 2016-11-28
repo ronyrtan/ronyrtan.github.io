@@ -323,60 +323,62 @@ html, body,
 
 #fbsection1 {
 	background-image: url(../images/simpleSettler.png);
-  background-size: 50%;
-  background-position: 90% 50%;
+  background-size: 40%;
+  background-position: 80% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: static;
   transition: 1s ease-in-out;
   background-color: white;
+  overflow: scroll;
 }
 
 #fbsection2 {
 	background-image: url(../images/twettir.png);
-  background-size: 50%;
-  background-position: 90% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: static;
-  transition: 1s ease-in-out;
-  background-color: white;
-}
-
-#fbsection3 {
-	background-image: url(../images/thisapp.png);
-    background-size: 50%;
-  background-position: 90% 50%;
+  background-size: 40%;
+  background-position: 80% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: static;
   transition: 1s ease-in-out;
   background-color: lightblue;
-  /*background: lightblue;*/
+  overflow: scroll;
 }
 
-#fbsection4 {
-	background-image: url(../images/tictactoe.png);
-    background-size: 50%;
-  background-position: 90% 50%;
+#fbsection3 {
+	background-image: url(../images/thisapp.png);
+    background-size: 40%;
+  background-position: 80% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: static;
   transition: 1s ease-in-out;
   background-color: #1F1E20;
-  /*background: lightgray;*/
+  overflow: scroll;
 }
 
-#fbsection5 {
-	background-image: url(../images/moviegram.png);
-  background-size: 50%;
-  background-position: 90% 50%;
+#fbsection4 {
+	background-image: url(../images/tictactoe.png);
+    background-size: 40%;
+  background-position: 80% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: static;
   transition: 1s ease-in-out;
   background-color: lightblue;
-  /*background: lightgray;*/
+  overflow: scroll;
+}
+
+#fbsection5 {
+	background-image: url(../images/moviegram.png);
+  background-size: 40%;
+  background-position: 80% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: static;
+  transition: 1s ease-in-out;
+  background-color: white;
+  overflow: scroll;
 }
 
 
@@ -437,7 +439,8 @@ html, body,
 
 .projectLinks {
   margin-top: 20vh;
-  width: 35%;
+  margin-left: 5%;
+  width: 33%;
   line-height: 2;
 }
 
