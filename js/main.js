@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 $(function(){
   $(".element").typed({
-    strings: ["Hi there!", "^1000 Welcome to my page.", "I'm a ^200 Web Designer.^1000", "A ^200 Full Stack Web Developer.^1000", "I am ^300 .^300 .^300 .^300", "<strong>RON TAN.</strong>"],
+    strings: ["Hi there! Welcome to my page.^500", "I'm a ^200 Web Designer.^1000", "A ^200 Front-End Web Developer.^1000", "I am ^300 .^300 .^300 .^300", "<strong>RON TAN.</strong>"],
     typeSpeed: 50,
     startDelay: 5,
     backSpeed: 0,
