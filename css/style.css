@@ -276,6 +276,14 @@ i:hover {
   margin: 1%;
 }
 
+.skills a {
+  text-decoration: none;
+  color: white;
+}
+.skills a:hover {
+  color: gray;
+}
+
 .skills i:before {
   font-size: 40px;
 }
@@ -452,7 +460,10 @@ html, body,
   color: gray;
   font-size: 40px;
   line-height: 1;
+}
 
+#fbsection2 a i:hover, #fbsection4 a i:hover {
+  color: white;
 }
 
 .projects a:hover {
