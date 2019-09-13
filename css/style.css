@@ -370,14 +370,17 @@ i:hover {
   width: 100%;
   margin: 0 auto;
   padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .workCSProjectInfo.top {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+  flex-wrap: wrap-reverse;
 }
 
 .workCSProjectInfo {
-  height: 500px;
+  /* height: 500px; */
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -831,6 +834,11 @@ i:hover {
 
 .toolsTwoCol {
   width: 120px;
+}
+
+.previewSpacer {
+  height: 80px;
+  width: 100%;
 }
 
 /*/// SKILLS ///*//*/// SKILLS ///*//*/// SKILLS ///*//*/// SKILLS ///*//*/// SKILLS ///*/
