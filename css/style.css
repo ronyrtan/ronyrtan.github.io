@@ -23,10 +23,11 @@ nav {
   height: 60px;
   width: 100%;
   z-index: 500;
+  background: white;
 }
 
 .nav {
-  width: 1250px;
+  width: 980px;
   height: 60px;
   padding: 0 5%;
   display: inline-flex;
@@ -47,9 +48,9 @@ nav {
   /* font-size: 24px; */
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: #333;
   width: 150px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); */
 }
 
 .navRight {
@@ -62,17 +63,96 @@ nav {
   display: inline-block;
   line-height: 60px;
   text-decoration: none;
-  color: white;
-  margin-left: 10px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  color: #333;
+  /* margin-left: 10px; */
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); */
   transition: all .3s ease;
 }
 
 .menuItemRight:hover {
-  color: gray;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  color: lightgray;
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0); */
+  /* font-weight: bold; */
 }
 
+
+/* DROPDOWN */
+
+
+
+.display-none {
+  /* display: none; */
+}
+
+.dropdown-menu{
+  width:100%;
+}
+
+.work {
+  width: 80px;
+  position: relative;
+  /* right: 173px; */
+  text-align: center;
+  padding: 0 10px;
+}
+.work:hover {
+  /* font-weight: bold; */
+}
+
+.menuItemRight.about:hover {
+  /* border-bottom: 2px solid black; */
+}
+
+.menuItemRight.about {
+  width: 80px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.dropdown-menu li {
+  display:inline-block;
+  vertical-align:top;
+  color: #333;
+  padding-bottom:5px;
+}
+
+.dropdown-menu ul {
+  position: absolute;
+  /* right: -45px;
+  top: 60px; */
+  display: none;
+  background: #fff;
+}
+
+.dropdown-menu li ul li {
+  display:list-item;
+  color:Navy;
+  padding-bottom:3px;
+  list-style: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.dropdown-menu li ul li a {
+  width: 140px;
+  display: block;
+}
+
+.dropdown-menu ul li:hover {
+  background: #333;
+}
+
+.dropdown-menu ul li:hover a {
+  color: #fff;
+  transition: .3s all ease;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
 
 
 /*/// HOME PAGE ///*//*/// HOME PAGE ///*//*/// HOME PAGE ///*//*/// HOME PAGE ///*/
@@ -81,7 +161,7 @@ nav {
 
 .home {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /* position: fixed; */
   z-index: -1;
   text-align: center;
@@ -112,7 +192,7 @@ h3 {
   height: 30px;
 }
 
-.spacer {
+/* .spacer {
   margin-top: 30px;
   display: block;
   height: 40px;
@@ -126,14 +206,19 @@ h3 {
 
 .spacerContent {
   display: none;
+} */
+
+.spacer.gray {
+  background: #f4f5f7;
+  padding-top: 50px;
 }
 
 .arrowCont {
-  position: absolute;
+  transform: translateY(-10px);
+  height: 0px;
   display: flex;
-  top: 63%;
-  height: 35%;
-  vertical-align: bottom;
+  width: 100%;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -187,19 +272,228 @@ i:hover {
 
 
 
+
+
+
+
+
+/*  HOME NEW  */
+
+.homeNew {
+  height: 670px;
+  background-size: cover;
+  background-image: url('../images/homeHero.png');
+  background-position: center;
+}
+
+.homeNew .container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 40px;
+  box-sizing: border-box;
+}
+
+.heroInfo {
+  max-width: 450px;
+  width: 100%;
+}
+
+.homeNew h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.headerLine {
+  height: 1px;
+  max-width: 280px;
+  width: 100%;
+  border-bottom: 2px solid white;
+  margin: 20px 0;
+}
+
+.homeNew h3 {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.homeNew p {
+  padding-bottom: 55px;
+  letter-spacing: 0.011em;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.homeNew .aboutMe {
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeNew .aboutMe a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding-top: 14px;
+}
+
+.homeNew .aboutMe a:hover {
+  color: #aba399;
+  background: #fff;
+  transition: .3s all ease;
+}
+
+.navSpacer {
+
+}
+
+
+
+
+/* WORK */
+
+.workCS {
+  background: #F4F5F7;
+}
+
+.workCS .container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.workCSProjectInfo.top {
+  margin-bottom: 80px;
+}
+
+.workCSProjectInfo {
+  height: 500px;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.workCSImage {
+  max-width: 600px;
+  width: 100%;
+  background: darkgray;
+}
+
+.workCSInfo {
+  max-width: 380px;
+  width: 100%;
+  background: white;
+  color: gray;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 60px 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.workCSInfo h1 {
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.workCSInfo h2 {
+  font-size: 18px;
+}
+
+.workCSInfo p {
+  font-size: 18px;
+  padding: 25px 0 40px;
+}
+
+.csTwoColumn {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.workCSInfo .csTwoColumn p {
+  font-size: 18px;
+  padding: 0;
+}
+
+.workCSInfo .readMoreCont {
+  height: 144px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.workCSInfo .secureSentinel.readMoreCont {
+  height: 122px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.workCSInfo .readMore {
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workCSInfo .readMore a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  border: 2px solid gray;
+  box-sizing: border-box;
+  padding-top: 14px;
+}
+
+.workCSInfo .readMore a:hover {
+  background: gray;
+  color: white;
+  transition: .3s all ease;
+}
+
+
+.imagePreview {
+  width: 100%;
+  height: 100%;
+}
+
+
 /*/// About Me ///*//*/// About Me ///*//*/// About Me ///*//*/// About Me ///*/
 
 
+.homeNew#about {
+  height: 857px !important;
+}
+
+.homeNew#about p {
+  padding-bottom: 30px;
+}
 
 
-.about {
-  /*height: 100vh;*/
+/* .about {
   text-align: center;
   display: flex;
   justify-content: center;
   color: black;
-  background: white;
-  /*overflow: scroll;*/
 }
 
 .about .container {
@@ -212,15 +506,12 @@ i:hover {
   padding: 50px 0 30px 0;
   max-width: 750px;
   margin: 0 auto;
-  /*display: none;*/
-  /* visibility: hidden; */
   left: -50px;
   position: relative;
   text-align: left;
 }
 
 .about p {
-  /* visibility: hidden; */
   left: -50px;
   position: relative;
 }
@@ -237,13 +528,12 @@ i:hover {
 }
 
 .about p {
-  /*width: 500px;*/
   text-align: left;
   padding-bottom: 40px;
   max-width: 750px;
   line-height: 2;
   margin: 0 auto;
-}
+} */
 
 
 
@@ -265,7 +555,23 @@ i:hover {
 .caseStudyHeader {
   height: 600px;
   position: relative;
-  background-image: url(https://i.redd.it/wd05a1sj24d21.jpg);
+  /* background-image: url("../images/headerPrototypeSmall.png"); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caseStudyHeader.secureSentinel {
+  background-image: url("../images/headerPrototypeSmall.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caseStudyHeader.openroads {
+  background-image: url("../images/headerPrototypeOpenroads.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -275,7 +581,8 @@ i:hover {
 .caseStudySection {
   height: 400px;
   position: relative;
-  background-image: url(https://i.redd.it/wd05a1sj24d21.jpg);
+  /* background-image: url(https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=2691&q=80); */
+  background-image: url("../images/sectionHeaderBig.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -290,7 +597,8 @@ i:hover {
   max-width: 450px;
   position: relative;
   top: 45%;
-  color: black;
+  /* color: black; */
+  color: #fff;
   line-height: 1.5;
 }
 
@@ -298,10 +606,12 @@ i:hover {
   letter-spacing: 0.011em;
   text-align: center;
   margin: 0 auto;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   position: relative;
   top: 45%;
-  color: black;
+  /* color: black; */
+  color: #fff;
   line-height: 1.5;
 }
 
@@ -342,39 +652,30 @@ i:hover {
 }
 
 .summaryPercent {
-  display: flex;
+  text-align: center;
+}
+
+.caseStudy .summaryPercent h1 {
+  font-size: 60px;
+  padding-top: 20px;
 }
 
 .summaryPercent sub {
     font-size: 15px;
-    bottom: 9px;
+    bottom: 14px;
     position: relative;
 }
 
-.summaryPercent div {
- padding-bottom: 20px;
+.summaryPercent p {
+  padding: 0 10px 20px;
+  font-size: 14px;
+  max-width: 125px;
 }
 
-.twoColumnSection {
-  width: 45%;
-  vertical-align: top;
-  min-width: 300px;
-}
-
-.twoColumnSection ol {
-  padding-left: 20px !important;
-}
-
-.twoColumnSection li {
-  padding-bottom: 10px;
-}
-
-.twoColumnSection.left {
-  padding-right: 10px;
-}
-
-.twoColumnSection.right {
-  padding-left: 10px;
+.infograph {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .cjm {
@@ -383,39 +684,44 @@ i:hover {
   width: 100%;
 }
 
-/* parallax scroll */
-
-/* .wrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 3px;
+.archetype {
+  padding: 30px 0 0;
 }
-
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  transform: translateZ(-1px) scale(1.7);
-  background-size: 100%;
-  z-index: -1;
-}
-
-.bg1::after {
-  background-image: url(https://i.redd.it/wd05a1sj24d21.jpg);
-} */
 
 .caseStudy.odd {
-  background: #0c0c0c;
+  background: #2b2b2b;
   color: white;
 }
 
+.caseStudy.red {
+  background: #CE5D5D;
+  padding: 100px 0;
+}
+
+.caseStudy .spacer {
+  height: 100px;
+  margin: 0;
+}
+
+.caseStudy.spacer50 {
+  height: 50px;
+  margin: 0;
+}
+
+.spacer50 {
+  height: 50px;
+  margin: 0;
+  /* background: #f4f5f7; */
+}
+
+.spacer50.gray {
+  height: 50px;
+  margin: 0;
+  background: #f4f5f7;
+}
+
 .caseStudy .container {
-  padding: 100px 5%;
+  padding: 0 5%;
   width: 750px;
   display: inline-block;
 }
@@ -432,6 +738,11 @@ i:hover {
   font-size: 24px;
   padding-bottom: 30px;
   font-weight: 500;
+  color: #ce5d5d;
+}
+
+.openRoads .caseStudy h2 {
+  color: #95c7a3;
 }
 
 .caseStudy p {
@@ -444,10 +755,83 @@ i:hover {
   padding: 0 0 20px 50px;
 }
 
+.caseStudy ul {
+  padding: 0 0 20px 50px;
+}
+
 .caseStudy li {
   line-height: 1.5;
 }
 
+
+/* aboutSkills */
+
+
+.aboutSkills {
+  /* height: 660px; */
+  padding: 80px 20px;
+}
+
+.aboutSkillsContainer {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillsUX {
+  background: gray;
+  height: 500px;
+  max-width: 325px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.skillsUX h1, .skillsDev h1 {
+  padding-bottom: 20px;
+}
+
+.skillsUX h3, .skillsDev h3 {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.011em;
+}
+
+.skillsUX ul, .skillsDev ul {
+  padding-bottom: 27px;
+}
+
+.skillsUX li, .skillsDev li {
+  line-height: 27px;
+  margin-left: 20px;
+  letter-spacing: 0.011em;
+}
+
+.skillsDev {
+  background: gray;
+  height: 500px;
+  max-width: 320px;
+  width: 100%;
+  margin-left: 10px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.headSpacer {
+  color: #808080;
+}
+
+.devToolsCont {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toolsTwoCol {
+  width: 120px;
+}
 
 /*/// SKILLS ///*//*/// SKILLS ///*//*/// SKILLS ///*//*/// SKILLS ///*//*/// SKILLS ///*/
 
@@ -455,7 +839,7 @@ i:hover {
 
 .skills {
   /*height: 100vh;*/
-  width: 100vw;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -610,7 +994,7 @@ html, body,
 
 .projects {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /*text-align: center;*/
   color: gray;
   background: white;
@@ -687,7 +1071,7 @@ html, body,
 
 .projectSpacer {
     height: 425vh;
-  width: 100vw;
+  width: 100%;
 }
 
 
@@ -699,7 +1083,7 @@ html, body,
 
 .contact {
   /*height: 50vh;*/
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
@@ -790,7 +1174,7 @@ html, body,
 
 .workProjects {
     background: lightblue;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;

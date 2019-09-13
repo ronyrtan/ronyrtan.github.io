@@ -1,29 +1,81 @@
 $(document).ready(function(){
 
+  $(document).on( 'DOMMouseScroll mousewheel', function ( event ) {
+  if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) {
+    //scroll down
+    $('nav').stop().slideUp();
+
+  } else {
+    //scroll up
+    $('nav').stop().slideDown();
+
+  }
+
+});
+
   $(document).scroll(function(){
     if ($(document).scrollTop() > 600) {
-      $('nav').css({
-        background: 'rgba(0,0,0,0.8)',
-        transition: '.3s'
-      });
-    } else {
-      $('nav').css('background', 'rgba(0,0,0,0)');
+    //   $('nav').css({
+    //     // background: 'rgba(0,0,0,0.8)',
+    //     background: 'white',
+    //     transition: '.3s'
+    //   });
+    //   $('.dropdown-menu li ul').css({
+    //     background: 'white',
+    //   });
+    //   $('.menuItemLeft').css({
+    //     color: '#333',
+    //   });
+    //
+    // } else {
+    //   $('nav').css('background', 'rgba(0,0,0,0)');
+    //   $('.dropdown-menu li ul').css({
+    //     background: 'rgba(0,0,0,0)',
+    //   });
+    //   $('.menuItemLeft').css({
+    //     color: 'white',
+    //   });
+    }
+    if ($(document).scrollTop() == 0) {
+      $('nav').stop().slideDown();
     }
 
-    // if ($(document).scrollTop() > 100) {
-    //   $('.about h1').animate({left: '0px'},1000);
-    //   $('.about h1').addClass('fadeIn');
-    // }
-    // if ($(document).scrollTop() > 300) {
-    //   $('.about p').animate({left: '0px'},1000);
-    //   $('.about p').addClass('fadeIn');
-    // }
   });
+
+
+  $.fn.DropDownMenu = function(options) {
+
+  return this.each(function() {
+
+          var $dropdownmenu = $(this);
+
+           $(">li", $dropdownmenu).mouseover(function() {
+              var $menuItem = $(this);
+
+              $("ul", $menuItem).stop().slideDown("normal");
+          }).mouseout(function() {
+
+              var $menuItem = $(this);
+              $("ul", $menuItem).stop().slideUp("normal");
+          });
+      });
+  };
+
+  $(function() {
+      $(".dropdown-menu").DropDownMenu();
+  });
+
 });
+
+
+
+
+
 
 $(function(){
   $(".element").typed({
-    strings: ["Hi there! ^100", "I'm a developer^100", "Turned ^500 UX Designer.^1000", "I am ^300 .^300 .^300 .^300", "<strong>RON TAN.</strong>"],
+    // strings: ["Hi there! ^100", "I'm a developer^100", "Turned ^500 UX Designer.^1000", "I am ^300 .^300 .^300 .^300", "<strong>RON TAN.</strong>"],
+    strings: ["This site is currently under development^500", "please check back later on 20th September 2019"],
     typeSpeed: 50,
     startDelay: 5,
     backSpeed: 0,
