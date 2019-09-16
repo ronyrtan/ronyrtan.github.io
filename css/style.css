@@ -280,7 +280,7 @@ i:before {
 /*  HOME NEW  */
 
 .homeNew {
-  height: 670px;
+  min-height: 670px;
   background-size: cover;
   background-image: url('../images/homeHero.png');
   background-position: center;
@@ -325,7 +325,8 @@ i:before {
 }
 
 .homeNew .aboutMe {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 60px;
   text-align: center;
   /* margin: 0 auto; */
@@ -339,7 +340,8 @@ i:before {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 60px;
   border: 2px solid white;
   box-sizing: border-box;
@@ -490,7 +492,8 @@ i:before {
 }
 
 .workCSInfo .readMore {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 60px;
   text-align: center;
   margin: 0 auto;
@@ -528,7 +531,7 @@ i:before {
 
 
 .homeNew#about {
-  height: 857px !important;
+  height: auto !important;
 }
 
 .homeNew#about p {
@@ -816,6 +819,12 @@ i:before {
 @media only screen and (max-width: 500px) {
   .homeNew p {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .workCSInfo {
+    max-width: 100% !important;
   }
 }
 
