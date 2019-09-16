@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
+  <!-- <script src="https://kit.fontawesome.com/7e1e33aaf6.js"></script> -->
   <script src="js/jquery.js"></script>
   <script src="js/typed.js"></script>
   <script src="js/main.js"></script>
@@ -15,7 +16,7 @@
 <body>
 
   <nav>
-    <div class="nav">
+    <div class="nav desktop">
       <div class="navLeft">
         <a href="./index.html" class="menuItemLeft">RON TAN</a>
       </div>
@@ -40,9 +41,48 @@
 
             <li class="about">
               <a href="./about.html" class="menuItemRight about">About</a>
-              <!-- <div class="asdf"></div> -->
             </li>
           </ul>
+
+      </div>
+    </div>
+
+
+    <div class="nav mobile">
+      <div class="navLeft">
+        <a href="./index.html" class="menuItemLeft">RON TAN</a>
+      </div>
+      <div class="navRight">
+
+        <div class="menuBar">
+          <img src="./images/menuBar.svg" alt="">
+        </div>
+
+        <div class="dropdownCont">
+
+          <ul class="dropdown-menu">
+
+            <li>
+              <a class="menuItemRight work">Work</a>
+              <ul class="display-none">
+                <li class="cs openroads">
+                  <a href="./openroads.html">Openroads</a>
+                </li>
+                <li class="cs secureSentinel">
+                  <a href="./secureSentinel.html">Secure Sentinel</a>
+                </li>
+                <li class="dev">
+                  <a href="./projectsWD.html">Dev Projects</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="about">
+              <a href="./about.html" class="menuItemRight about">About</a>
+            </li>
+          </ul>
+
+        </div>
 
       </div>
     </div>
@@ -94,42 +134,50 @@
 
       <h1>Skills</h1>
 
-      <h2>Front End:</h2>
+      <h2>Dev tools</h2>
 
       <div class="skillsIcon">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">
           <i class="devicon-html5-plain"></i>
           <span>HTML</span>
-        </a>
       </div>
       <div class="skillsIcon">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
           <i class="devicon-css3-plain"></i>
           <span>CSS</span>
-        </a>
       </div>
       <div class="skillsIcon">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
           <i class="devicon-javascript-plain"></i>
           <span>Javascript</span>
-        </a>
       </div>
       <div class="skillsIcon">
-        <a href="http://api.jquery.com/" target="_blank">
           <i class="devicon-jquery-plain"></i>
           <span>jQuery</span>
+      </div>
+      <div class="skillsIcon">
+          <i class="devicon-angularjs-plain"></i>
+          <span>Angular</span>
+      </div>
+      <div class="skillsIcon">
+        <a href="http://ruby-doc.org/" target="_blank">
+          <i class="devicon-php-plain"></i>
+          <span>PHP</span>
         </a>
       </div>
       <div class="skillsIcon">
-        <a href="http://backbonejs.org/" target="_blank">
-          <i class="devicon-backbonejs-plain"></i>
-          <span>Backbone</span>
+        <a href="https://help.github.com/" target="_blank">
+          <i class="devicon-github-plain"></i>
+          <span>GitHub</span>
         </a>
       </div>
 
       <h2>Back End:</h2>
 
       <div class="skillsIcon">
+        <a href="http://ruby-doc.org/" target="_blank">
+          <i class="devicon-php-plain"></i>
+          <span>PHP</span>
+        </a>
+      </div> -->
+      <!-- <div class="skillsIcon">
         <a href="http://ruby-doc.org/" target="_blank">
           <i class="devicon-ruby-plain"></i>
           <span>Ruby</span>
@@ -152,9 +200,9 @@
           <i class="devicon-postgresql-plain"></i>
           <span>PostgreSQL</span>
         </a>
-      </div>
+      </div> -->
 
-      <h2>Tools:</h2>
+      <!-- <h2>Tools:</h2>
 
       <div class="skillsIcon">
         <a href="https://help.github.com/" target="_blank">
@@ -180,20 +228,14 @@
 
 
 
-  <div id="projects" class="projects">
+  <!-- <div id="projects" class="projects">
     <div class="container">
       <div class="projectheader">
         <h1>Dev projects.</h1>
       </div>
 
     <div id="cbp-fbscroller" class="cbp-fbscroller">
-      <!-- <nav>
-        <a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
-        <a href="#fbsection2">Section 2</a>
-        <a href="#fbsection3">Section 3</a>
-        <a href="#fbsection4">Section 4</a>
-        <a href="#fbsection5">Section 5</a>
-      </nav> -->
+
       <section id="fbsection1">
         <div class="projectsDiv">
           <div class="projectLinks">
@@ -258,7 +300,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="fbsection6"></section> -->
     </div>
 
 
@@ -266,31 +307,105 @@
 
 
 
+
+    </div>
+  </div> -->
+
+  <!-- <div class="projectSpacer"></div> -->
+
+  <div id="workCS" class="workCS">
+    <div class="container">
+
+      <div class="workCSProjectInfo">
+        <div class="workCSImage">
+          <img class="imagePreview" src="./images/mLSG.png" alt="Openroads image preview">
+        </div>
+        <div class="workCSInfo">
+          <div>
+            <h2>Full stack developer</h2>
+            <h1>My Little Seeds Garden</h1>
+          <p>Site built using jQuery & PHP for the My Little Seeds Garden campaign.</p>
+          </div>
+
+          <div class="readMore">
+            <a target="_blank" href="https://www.mylittleseedgarden.com.au/">Visit site</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="previewSpacer">
+      </div>
+
+      <div class="workCSProjectInfo top">
+        <div class="workCSInfo">
+
+          <div>
+            <h2>Full stack developer</h2>
+            <h1>Brisbane's Best Tradie</h1>
+            <p>Site built using jQuery & PHP for the Brisbane's Best Tradie campaign.</p>
+          </div>
+          <div class="readMore">
+            <a target="_blank" href="https://www.brisbanesbesttradie.com.au/">Visit site</a>
+          </div>
+
+        </div>
+
+        <div class="workCSImage">
+          <img class="imagePreview" src="./images/bbt.png" alt="Secure Sentinel image preview">
+        </div>
+      </div>
+
+      <div class="previewSpacer">
+      </div>
+
+      <div class="workCSProjectInfo">
+        <div class="workCSImage">
+          <img class="imagePreview" src="./images/bpc.png" alt="Borobi pin collection site">
+        </div>
+        <div class="workCSInfo">
+          <div>
+            <h2>Front-End Developer</h2>
+            <h1>Borobi Pin Collection</h1>
+          <p>Site built using jQuery & PHP for the Borobi Pin Collection campaign.</p>
+          </div>
+
+          <div class="readMore">
+            <a target="_blank" href="https://www.borobipincollection.com.au/">Visit site</a>
+          </div>
+
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <div class="projectSpacer"></div>
-
-  <div class="workProjects">
+  <!-- <div class="workProjects">
     <div class="container">
-      <h1>Work Projects.</h1>
+      <h1>Development Projects.</h1>
 
       <h3>These microsites were developed in Wordpress using PhP.</h3>
       <div class="wpProjects">
         <div>
-          <h4>Borobi Pin Collection</h4>
-          <img src="./images/bpc.png" alt="borobi pin collection site"><br/>
-          <a href="https://www.borobipincollection.com.au/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+          <h4>My Litte Seeds Garden</h4>
+          <img src="./images/mLSG.png" alt="my little seeds garden site"><br/>
+          <a href="https://www.mylittleseedgarden.com.au/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
         </div>
+
         <div>
           <h4>Brisbane's Best Tradie</h4>
           <img src="./images/bbt.png" alt="brisbane's best tradie site"><br/>
           <a href="https://www.brisbanesbesttradie.com.au/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
         </div>
+
+        <div>
+          <h4>Borobi Pin Collection</h4>
+          <img src="./images/bpc.png" alt="borobi pin collection site"><br/>
+          <a href="https://www.borobipincollection.com.au/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div id="contact" class="contact">
     <div class="container">
@@ -322,13 +437,13 @@
   <footer>
     <div class="footer">
       <div class="arrowUp">
-        <a href="#home">
+        <a href="#workCS">
           <i class="fa fa-chevron-up" aria-hidden="true"></i>
         </a>
       </div>
       <div class="links">
-        <a href="https://au.linkedin.com/in/ron-tan-b3601311b" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://github.com/ronyrtan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://au.linkedin.com/in/ron-tan-b3601311b" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/ronyrtan" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
       </div>
       <div class="copyright">
         <p>© 2016 Ron Tan | Original design and template by Ron Tan</p>

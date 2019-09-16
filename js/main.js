@@ -13,6 +13,12 @@ $(document).ready(function(){
 
 });
 
+  $('.menuBar').on('click', function () {
+      if ($(document).width() < 500 ) {
+        $('.nav .dropdownCont').toggle('normal');
+      }
+  })
+
   $(document).scroll(function(){
     if ($(document).scrollTop() > 600) {
     //   $('nav').css({

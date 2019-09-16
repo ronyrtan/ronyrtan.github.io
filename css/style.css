@@ -266,9 +266,9 @@ i:before {
   font-size: 40px;
 }
 
-i:hover {
+/* i:hover {
   color: lightblue;
-}
+} */
 
 
 
@@ -356,8 +356,51 @@ i:hover {
 
 }
 
+.menuBar img {
+      width: 20px;
+    padding-top: 20px;
+}
+
+.nav .dropdownCont {
+  display: none;
+}
 
 
+
+.nav .dropdownCont .dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  background: white;
+}
+
+.nav.mobile .dropdownCont .dropdown-menu .display-none {
+  width: 100%;
+  display: none;
+}
+
+.nav.mobile .dropdownCont .dropdown-menu .display-none li {
+    display: list-item;
+    padding-bottom: 3px;
+    list-style: none;
+    height: 40px;
+    line-height: 30px;
+    padding: 0 30px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
 
 /* WORK */
 
@@ -381,6 +424,7 @@ i:hover {
 
 .workCSProjectInfo {
   /* height: 500px; */
+  width: 100%;
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -769,10 +813,16 @@ i:hover {
 
 /* aboutSkills */
 
+@media only screen and (max-width: 500px) {
+  .homeNew p {
+    font-size: 13px;
+  }
+}
 
 .aboutSkills {
   /* height: 660px; */
-  padding: 80px 20px;
+  padding: 80px 0;
+  background: #F4F5F7;
 }
 
 .aboutSkillsContainer {
@@ -782,6 +832,27 @@ i:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.uXSkills {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+.uXSkills h1 {
+  font-size: 24px;
+  color: #2b2b2b;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.uXSkills img {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .skillsUX {
@@ -795,6 +866,7 @@ i:hover {
 
 .skillsUX h1, .skillsDev h1 {
   padding-bottom: 20px;
+  font-size: 24px;
 }
 
 .skillsUX h3, .skillsDev h3 {
@@ -811,6 +883,7 @@ i:hover {
   line-height: 27px;
   margin-left: 20px;
   letter-spacing: 0.011em;
+  font-size: 14px;
 }
 
 .skillsDev {
@@ -848,11 +921,17 @@ i:hover {
 .skills {
   /*height: 100vh;*/
   width: 100%;
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: center;
   color: white;
-  background: lightblue;
+  background: #2b2b2b;
+}
+
+.skills .tools {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .skills .container {
@@ -891,9 +970,9 @@ i:hover {
   font-size: 40px;
 }
 
-.skills i:hover {
+/* .skills i:hover {
   color: gray;
-}
+} */
 
 .skills span {
   display: inline-block;
@@ -1181,7 +1260,7 @@ html, body,
 /* /// WORK PROJECTS /// *//* /// WORK PROJECTS /// *//* /// WORK PROJECTS /// */
 
 .workProjects {
-    background: lightblue;
+    background: #f4f5f7;
     width: 100%;
     text-align: center;
     display: flex;
@@ -1190,9 +1269,11 @@ html, body,
 }
 
 .workProjects .container {
-  width: 960px;
+  max-width: 960px;
+  width: 100%;
   display: inline-block;
-  padding: 50px;
+  padding: 100px 50px;
+  box-sizing: border-box;
 }
 
 .workProjects img {
@@ -1203,6 +1284,10 @@ html, body,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.wpProjects div {
+  margin-bottom: 40px;
 }
 
 .workProjects h1, .workProjects h3 {
