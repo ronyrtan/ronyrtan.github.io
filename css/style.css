@@ -286,6 +286,10 @@ i:before {
   background-position: center;
 }
 
+.homeNew#about {
+  background-image: url('../images/aboutMeHero.png');
+}
+
 .homeNew .container {
   max-width: 980px;
   width: 100%;
@@ -682,7 +686,7 @@ i:before {
 }
 
 .caseStudySummary div {
-  min-width: 250px;
+  min-width: 150px;
   margin-bottom: 20px;
 }
 
@@ -772,13 +776,13 @@ i:before {
 
 .caseStudy .container {
   padding: 0 5%;
-  width: 750px;
+  width: 650px;
   display: inline-block;
 }
 
 .caseStudy h1 {
   padding: 50px 0 5px 0;
-  max-width: 750px;
+  max-width: 650px;
   margin: 0 auto;
   position: relative;
   font-size: 18px;
