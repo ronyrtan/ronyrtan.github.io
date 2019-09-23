@@ -685,6 +685,10 @@ i:before {
   line-height: 1.5;
 }
 
+.caseStudy.caption p {
+  font-style: italic;
+}
+
 .caseStudySummary div {
   min-width: 150px;
   margin-bottom: 20px;
