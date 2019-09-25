@@ -19,6 +19,10 @@ $(document).ready(function(){
       }
   })
 
+  $('.viewMore').on('click', function () {
+    $('.caseStudy.green .wireframeAll').slideToggle('normal');
+  })
+
   $(document).scroll(function(){
     if ($(document).scrollTop() > 600) {
     //   $('nav').css({
