@@ -5,9 +5,16 @@ $(document).ready(function(){
     //scroll down
     $('nav').stop().slideUp();
 
+    if ($(document).width() < 500 ) {
+      $('.nav.mobile').slideUp();
+    }
+
   } else {
     //scroll up
     $('nav').stop().slideDown();
+    if ($(document).width() < 500 ) {
+      $('.nav.mobile').slideDown();
+    }
 
   }
 
