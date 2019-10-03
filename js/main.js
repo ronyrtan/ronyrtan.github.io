@@ -11,9 +11,9 @@ $(document).ready(function(){
 
   } else {
     //scroll up
-    $('nav').stop().slideDown();
+    $('nav').stop().slideDown(200);
     if ($(document).width() < 500 ) {
-      $('.nav.mobile').slideDown();
+      $('.nav.mobile').slideDown(200);
     }
 
   }
@@ -54,7 +54,7 @@ $(document).ready(function(){
     //   });
     }
     if ($(document).scrollTop() == 0) {
-      $('nav').stop().slideDown();
+      $('nav').stop().slideDown(200);
     }
 
   });
