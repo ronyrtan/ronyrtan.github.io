@@ -501,6 +501,7 @@ i:before {
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .workCSImage {
@@ -871,8 +872,6 @@ i:before {
     cursor: pointer;
 }
 
-
-
 .caseStudy .spacer {
   height: 100px;
   margin: 0;
@@ -950,6 +949,12 @@ i:before {
 @media only screen and (max-width: 600px) {
   .workCSInfo {
     max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 501px) {
+  .workCSInfo {
+    max-width: 600px;
   }
 }
 
