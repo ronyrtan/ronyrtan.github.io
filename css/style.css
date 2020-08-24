@@ -700,6 +700,14 @@ i:before {
   background-size: cover;
 }
 
+.caseStudyHeader.workplus {
+  background-image: url("../images/headerPrototypeWorkPlus.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .caseStudySection {
   height: 400px;
   position: relative;
@@ -826,6 +834,11 @@ i:before {
 .caseStudy.odd {
   background: #2b2b2b;
   color: white;
+}
+
+.caseStudy.yellow {
+  background: #FFE9AC;
+  color: #111;
 }
 
 .caseStudy.red {
