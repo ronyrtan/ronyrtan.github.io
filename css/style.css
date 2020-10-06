@@ -708,6 +708,14 @@ i:before {
   background-size: cover;
 }
 
+.caseStudyHeader.ballotBox {
+  background-image: url("../images/headerPrototypeBallotBox.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .caseStudySection {
   height: 400px;
   position: relative;
