@@ -23,7 +23,7 @@ body {
   background: white
 }
 
-.contentContainer::-webkit-scrollbar {
+.contentContainer::-webkit-scrollbar, .wrapper::-webkit-scrollbar {
   display: none;
 }
 
