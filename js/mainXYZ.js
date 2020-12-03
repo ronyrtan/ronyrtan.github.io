@@ -30,18 +30,14 @@ $( document ).ready(function() {
   var currentScroll = $(this).scrollTop();
   var inView;
    if (currentScroll > lastScroll){
-       console.log('down');
        inView = isInViewport(wrapper)
    } else {
-      console.log('up');
       inView = isInViewportUp(wrapper)
    }
-   console.log(inView);
    lastScroll = currentScroll;
 
     if (inView || distance == 50) {
 
-console.log('count: ' + count);
       //change ad position to fix and change overflow states
       if (count < 2) {
         $('.wrapper').addClass('positionFixed');
