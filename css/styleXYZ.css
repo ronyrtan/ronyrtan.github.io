@@ -23,7 +23,7 @@ body {
   background: white
 }
 
-.contentContainer::-webkit-scrollbar, .wrapper::-webkit-scrollbar {
+.contentContainer::-webkit-scrollbar, .wrapper::-webkit-scrollbar, .scrollDiv::-webkit-scrollbar {
   display: none;
 }
 
@@ -136,7 +136,7 @@ article h1 {
   left: 0;
   z-index: 3;
   overflow: scroll;
-  opacity: 0;
+  opacity: 0.01;
 }
 
 .overflowScroll {
