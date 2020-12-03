@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto Slab" ,serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: #333;
+  /* height: 500vh; */
+}
+
+.contentContainer {
+  width: 375px;
+  height: 745px;
+  overflow: scroll;
+  position: absolute;
+  background: white
+}
+
+.contentContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.contentContainerOffset {
+  margin-top: 50px;
+}
+
+
+/* HEADER *//* HEADER *//* HEADER *//* HEADER */
+
+.header {
+  display: flex;
+  background-color: #e91e62;
+  position: fixed;
+  width: 375px;
+  z-index: 10;
+  top: 0;
+  height: 50px;
+}
+
+.menuButton {
+  width: 50px;
+  height: 50px;
+}
+
+.playLogo {
+  position: absolute;
+  top: 2px;
+  left: 40px;
+  width: 200px;
+  height: 40px;
+}
+
+
+/* MAIN ARTICLES *//* MAIN ARTICLES *//* MAIN ARTICLES */
+
+article {
+  margin: 20px;
+}
+
+article h1 {
+  margin: 15px 0;
+  text-align: left;
+  color: #333;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.authorTop {
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.heroImage img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.authorBottom img {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.copy p {
+  color: #212121;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.adSpacer {
+  margin:auto auto;
+  width:320px;
+  height:50px;
+  background-color:#e3e3e3;
+}
+
+
+/* AD *//* AD *//* AD *//* AD */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 695px;
+  cursor: pointer;
+}
+
+.adContainer {
+  position: relative;
+  width: 100%;
+  height: 695px;
+  perspective: 8px;
+  perspective-origin: 0%;
+  display: flex;
+}
+
+.scrollDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  overflow: scroll;
+  opacity: 0;
+}
+
+.overflowScroll {
+  overflow-y: scroll;
+}
+
+.overflowHidden {
+  overflow-y: hidden !important;
+}
+
+.positionFixed {
+  position: fixed !important;
+  top: 50px;
+  overflow-y: scroll;
+  width: 375px;
+}
+
+.adLogo {
+  width:100%;
+  position:fixed;
+  top:0;
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  transform: translateY(0%);
+}
+
+.background img {
+  /* height: 1000px; */
+  width: 100%;
+}
+
+.foreground h1 {
+  font-size: 36px;
+}
+
+.adForImgOne {
+  transform: translateY(75%);
+}
+
+.adForImgOneGlow {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(25%);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.tagline {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline span {
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+  font-family: Cera Pro, sans-serif;
+  opacity: 0;
+}
+
+
+/* AD FOOTER *//* AD FOOTER *//* AD FOOTER */
+
+.adFooter {
+  display: flex;
+  height: 70px;
+  background: #111;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  border: 1px solid white;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 70%;
+  color: white;
+  font-family: Cera Pro, sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 22px;
+  transition: 1s ease all;
+}
+
+.cta:hover {
+  background: white;
+  color: #111;
+}
+
+
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+
+#footerBar {
+  padding-top: 10px;
+    background-color: #666 !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#disclaimer {
+  background-color: #333;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
