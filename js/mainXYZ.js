@@ -29,12 +29,16 @@ $( document ).ready(function() {
 
   var currentScroll = $(this).scrollTop();
   var inView;
-   if (currentScroll > lastScroll){
+    if (currentScroll > lastScroll){
        inView = isInViewport(wrapper)
-   } else {
+    } else {
+       inView = isInViewportUp(wrapper)
+    }
+    lastScroll = currentScroll;
+
+    if ($('.wrapper').offset().top <= 0) {
       inView = isInViewportUp(wrapper)
-   }
-   lastScroll = currentScroll;
+    }
 
     if (inView || distance == 50) {
 
