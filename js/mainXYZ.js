@@ -13,7 +13,7 @@ $( document ).ready(function() {
     return (
       rect.top <= 50 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom <= ($('.contentContainer').innerHeight()) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
@@ -22,7 +22,7 @@ $( document ).ready(function() {
     return (
       rect.top >= 50 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= ($('.contentContainer').innerHeight()) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
@@ -32,12 +32,17 @@ $( document ).ready(function() {
     if (currentScroll > lastScroll){
        inView = isInViewport(wrapper)
     } else {
-       inView = isInViewportUp(wrapper)
+      if ($('.wrapper').offset().top <= 0) {
+        inView = isInViewportUp(wrapper)
+      } else {
+        inView = isInViewport(wrapper)
+      }
     }
     lastScroll = currentScroll;
 
     if ($('.wrapper').offset().top <= 0) {
       inView = isInViewportUp(wrapper)
+      console.log('up');
     }
 
     if (inView || distance == 50) {
