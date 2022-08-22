@@ -192,6 +192,11 @@ h3 {
   height: 30px;
 }
 
+#disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* .spacer {
   margin-top: 30px;
   display: block;
